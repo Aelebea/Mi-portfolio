@@ -1,0 +1,126 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Mi Portafolio - Alba Reche</title>
+
+    <!--conexion con fuente google online: Playfair Display para títulos, DM Sans para texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--barra de navegación fija arriba con logo + enlaces a secciones-->
+    <nav>
+      <!--más abajo pongo el id "inicio"-->
+      <a href="#inicio" class="nav-logo">AR</a>
+
+      <!--lista desordenada de enlaces del menú -->
+      <ul class="nav-links">
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!--HERO portada principal-->
+    <section id="inicio" class="hero">
+      <p class="hero-bienvenida">Hola, soy</p>
+      <h1 class="hero-nombre">Alba Reche</h1>
+      <p class="hero-roles texto-sombra">
+        Illustrator &nbsp;·&nbsp; Graphic Designer &nbsp;·&nbsp; UX/UI
+        &nbsp;·&nbsp; Learning Full Stack Developer
+      </p>
+
+      <!--flechita decorativa que indica scroll hacia abajo -->
+      <div class="hero-flecha">↓</div>
+    </section>
+
+        <section id="proyectos">
+
+    <main class="container">
+      <section class="titulo">
+        <h1>Catálogo de Proyectos</h1>
+
+        <div class="flex-gallery">
+          
+          <a
+            href="https://aelebea.github.io/Formatear-Texto-E-Imagenes-Web-Cantantes/"
+            target="_blank"
+            class="card"
+          >
+            <h3>Mis Cantantes Favoritos</h3>
+            <p>Web de música electrónica</p>
+            
+          </a>
+
+          <a
+            href="https://aelebea.github.io/Personajes-Favoritos/"
+            target="_blank"
+            class="card"
+          >
+            <h3>Animaciones CSS</h3>
+            <p>Mis personajes favoritos en movimiento</p>
+          </a>
+
+          <a
+            href="https://aelebea.github.io/Web-Sobre-Mi-Con-Flex/"
+            target="_blank"
+            class="card"
+          >
+            <h3>Web sobre mi</h3>
+            <p>con flex</p>
+          </a>
+        </div>
+      </section>
+
+
+
+    
+
+    <section id="contacto"></section>
+
+    <form action="recibido.html" method="GET"></form>
+    <div class="titulo">
+      <h1>Contacta conmigo</h1>
+    </div>
+
+    <form action="recibido.html" method="GET">
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="nombre" />
+      </div>
+
+      <div>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" required />
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+
+      <div>
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" required />
+      </div>
+
+      <div>
+        <label for="comentario">Comentario:</label>
+        <textarea name="comentario" id="comentario" maxlength="150"></textarea>
+      </div>
+
+      <button type="submit">Enviar consulta</button>
+    </form>
+  </body>
+</html>
